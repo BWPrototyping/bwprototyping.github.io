@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Company</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-    h1 { font-size: 2.5em; }
-    p { font-size: 1.2em; }
-    a { color: blue; text-decoration: none; font-weight: bold; }
-    .card {
-      max-width: 500px;
-      margin: auto;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h1>My Company Ltd</h1>
-    <p>Specialists in bespoke electrical systems</p>
-    <p><strong>Email:</strong> <a href="mailto:info@mycompany.co.uk">info@mycompany.co.uk</a></p>
-    <p><strong>Phone:</strong> +44 1234 567890</p>
-    <p><strong>Location:</strong> London, UK</p>
-  </div>
-</body>
-</html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>COMPANY NAME — Bespoke Electrical Systems</title>
+<meta name="description" content="Short one-line summary of what your company does." />
+<meta name="robots" content="index,follow" />
+<style>
+/* ---- Base / Reset ---- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+line-height: 1.6; color: #0f172a; background: #f8fafc;
+}
+
+
+:root {
+--maxw: 1100px;
+--radius: 16px;
+--shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+--brand: #0ea5e9; /* change to match your brand */
+}
+
+
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+.container { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; }
+.section { padding: 3rem 0; }
+
+
+/* ---- Header / Hero Image ---- */
+header {
+background: white;
+border-bottom: 1px solid #e2e8f0;
+}
+.brand-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 0; }
+.logo {
+font-weight: 700; letter-spacing: .3px; font-size: 1.1rem;
+}
+.cta { display: inline-block; padding: .6rem 1rem; border-radius: 999px; background: var(--brand); color: white; border: none; box-shadow: var(--shadow); }
+.cta:hover { opacity: .9; }
+
+
+.hero {
+margin: 0; position: relative; overflow: hidden; border-radius: 0; background: #e2e8f0;
+}
+.hero img { width: 100%; height: clamp(220px, 38vw, 420px); object-fit: cover; display: block; filter: saturate(0.95) contrast(1.02); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,23,42,0.55), rgba(15,23,42,0.25) 55%, transparent); }
+.hero-title {
+position: absolute; inset: auto 0 1.5rem 0; color: white; text-align: center; padding: 0 1rem; font-weight: 700;
+text-shadow: 0 2px 12px rgba(0,0,0,0.35); font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+
+/* ---- Cards / Layout ---- */
+.grid { display: grid; gap: 1.25rem; }
+@media (min-width: 900px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+
+
+.card {
+background: white; border: 1px solid #e2e8f0; border-radius: var(--radius); box-shadow: var(--shadow);
+padding: 1.25rem;
+}
+h2 { margin: 0 0 .5rem 0; line-height: 1.25; font-size: clamp(1.25rem, 2.4vw, 1.6rem); }
+p { margin: .5rem 0; }
