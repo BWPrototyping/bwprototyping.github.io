@@ -1,110 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>COMPANY NAME - Bespoke Electrical Systems</title>
-  <meta name="description" content="Short one-line summary of what your company does">
-  <meta name="robots" content="index,follow">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #0f172a;
-      background: #f8fafc;
-    }
-    a { color: #0ea5e9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { width: min(100% - 2rem, 1100px); margin-inline: auto; }
-    .section { padding: 3rem 0; }
-    header { background: white; border-bottom: 1px solid #e2e8f0; }
-    .brand-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 0; }
-    .logo { font-weight: 700; font-size: 1.1rem; }
-    .cta { display: inline-block; padding: .6rem 1rem; border-radius: 999px; background: #0ea5e9; color: white; border: none; }
-    .cta:hover { opacity: .9; }
-    .hero img { width: 100%; height: clamp(220px, 38vw, 420px); object-fit: cover; display: block; }
-    .hero-title { position: absolute; bottom: 1.5rem; left: 0; right: 0; color: white; text-align: center; font-weight: 700; font-size: clamp(1.6rem, 4vw, 2.4rem); }
-    .grid { display: grid; gap: 1.25rem; }
-    @media (min-width: 900px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
-    .card { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; }
-    h2 { margin: 0 0 .5rem 0; font-size: 1.6rem; }
-    p { margin: .5rem 0; }
-    ul { padding-left: 1.1rem; margin: .5rem 0; }
-    li { margin: .3rem 0; }
-    .contact { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; }
-    .contact .row { display: grid; gap: .75rem; }
-    @media (min-width: 640px) { .contact .row { grid-template-columns: 1fr 1fr; } }
-    label { font-size: .9rem; color: #475569; }
-    input, textarea { width: 100%; padding: .7rem .8rem; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; }
-    textarea { min-height: 130px; resize: vertical; }
-    footer { color: #64748b; font-size: .9rem; padding: 2rem 0 3rem; text-align: center; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMPANY NAME - Bespoke Electrical Systems</title>
+<meta name="description" content="Short one-line summary of what your company does">
+<meta name="robots" content="index,follow">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #0f172a;
+background: #f8fafc;
+}
+a { color: #0ea5e9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { width: min(100% - 2rem, 1100px); margin-inline: auto; }
+.section { padding: 3rem 0; }
+header { background: white; border-bottom: 1px solid #e2e8f0; }
+.brand-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 0; }
+.logo { display: flex; align-items: center; gap: .5rem; font-weight: 700; font-size: 1.1rem; }
+.logo img { height: 50px; width: auto; }
+.cta { display: inline-block; padding: .6rem 1rem; border-radius: 999px; background: #0ea5e9; color: white; border: none; }
+.cta:hover { opacity: .9; }
+.hero img { width: 100%; height: clamp(220px, 38vw, 420px); object-fit: cover; display: block; }
+.hero-title { position: absolute; bottom: 1.5rem; left: 0; right: 0; color: white; text-align: center; font-weight: 700; font-size: clamp(1.6rem, 4vw, 2.4rem); }
+.grid { display: grid; gap: 1.25rem; }
+@media (min-width: 900px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+.card { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; }
+h2 { margin: 0 0 .5rem 0; font-size: 1.6rem; }
+p { margin: .5rem 0; }
+ul { padding-left: 1.1rem; margin: .5rem 0; }
+li { margin: .3rem 0; }
+.contact { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; }
+.contact .row { display: grid; gap: .75rem; }
+@media (min-width: 640px) { .contact .row { grid-template-columns: 1fr 1fr; } }
+label { font-size: .9rem; color: #475569; }
+input, textarea { width: 100%; padding: .7rem .8rem; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; }
+textarea { min-height: 130px; resize: vertical; }
+footer { color: #64748b; font-size: .9rem; padding: 2rem 0 3rem; text-align: center; }
+</style>
 </head>
 <body>
-  <header>
-    <div class="container brand-bar">
-      <div class="logo">COMPANY NAME LTD</div>
-      <a class="cta" href="mailto:info@yourdomain.co.uk">Contact</a>
-    </div>
-    <figure class="hero" style="position: relative;">
-      <img src="https://via.placeholder.com/2000x800" alt="Company header image">
-      <figcaption class="hero-title">Bespoke Electrical Systems for Commercial & Industrial Clients</figcaption>
-    </figure>
-  </header>
+<header>
+<div class="container brand-bar">
+<div class="logo">
+<img src="assets/work examples image.png" alt="Company Logo">
+<span>COMPANY NAME LTD</span>
+</div>
+<a class="cta" href="mailto:info@yourdomain.co.uk">Contact</a>
+</div>
+<figure class="hero" style="position: relative;">
+<img src="assets/hero.jpg" alt="Company header image">
+<figcaption class="hero-title">Bespoke Electrical Systems for Commercial & Industrial Clients</figcaption>
+</figure>
+</header>
 
-  <main class="container">
-    <div class="section grid grid-2">
-      <section class="card" id="about">
-        <h2>About Us</h2>
-        <p>Write a short paragraph about your company here. For example: We design, build, and install bespoke electrical and electronics systems across the UK.</p>
-      </section>
-      <section class="card" id="capabilities">
-        <h2>Capabilities</h2>
-        <ul>
-          <li>Custom PCB design & embedded integration</li>
-          <li>Control panels & industrial automation</li>
-          <li>On-site installation & commissioning</li>
-          <li>Compliance with UK standards</li>
-          <li>Technical documentation & testing</li>
-        </ul>
-      </section>
-    </div>
 
-    <section class="section">
-      <div class="contact" id="contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:info@yourdomain.co.uk">info@yourdomain.co.uk</a> · <strong>Phone:</strong> +44 0000 000000</p>
-        <form action="mailto:info@yourdomain.co.uk" method="post" enctype="text/plain">
-          <div class="row">
-            <div>
-              <label for="name">Your name</label>
-              <input id="name" name="Name" placeholder="Jane Doe" required>
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="Email" type="email" placeholder="you@example.com" required>
-            </div>
-          </div>
-          <div style="margin-top:.75rem;">
-            <label for="message">Message</label>
-            <textarea id="message" name="Message" placeholder="Tell us briefly what you need…" required></textarea>
-          </div>
-          <div style="margin-top:1rem;">
-            <button class="cta" type="submit">Send</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
+<main class="container">
+<div class="section grid grid-2">
+<section class="card" id="about">
+<h2>About Us</h2>
+<p>Write a short paragraph about your company here. For example: We design, build, and install bespoke electrical and electronics systems across the UK.</p>
+</section>
+<section class="card" id="capabilities">
+<h2>Capabilities</h2>
+<ul>
+<li>Custom PCB design & embedded integration</li>
+<li>Control panels & industrial automation</li>
+<li>On-site installation & commissioning</li>
+<li>Compliance with UK standards</li>
+<li>Technical documentation & testing</li>
+</ul>
+</section>
+</div>
 
-  <footer>
-    <div class="container">© <span id="year"></span> COMPANY NAME LTD</div>
-  </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+<section class="section">
